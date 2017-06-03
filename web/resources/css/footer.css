@@ -1,0 +1,36 @@
+footer {
+    background-color: white;
+    /*background-image: url(images/bluedry.jpg);*/
+    color: black;
+}
+
+.footer-links{
+    background-color: #185891;
+    width: 100%;
+    line-height: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-links a{
+    font-family: sans-serif;
+    font-weight: 700;
+    color: lightskyblue;
+}
+
+.footer-links a + a:before{
+    content: " | ";
+    font-weight: 700;
+    color: aquamarine;
+    padding: 0 10px;
+}
+
+.footer-links a:hover{
+    color: white;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+}
+
+.img-logo{
+    max-height: 100px !important;
+}

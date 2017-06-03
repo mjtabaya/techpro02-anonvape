@@ -1,0 +1,484 @@
+body {
+    font-family: 'Raleway',sans-serif;
+    background-color: #FFFFFF;
+	min-height: 1500px;
+    overflow-x: hidden;
+}
+
+.pages {
+    font-family: sans-serif;
+}
+
+#disabledpage {
+    color: gray;
+}
+
+#page {
+    color: black;
+}
+
+.link {
+    color:  #337ab7;
+}
+
+a hr:hover:before, a hr:hover:after{
+    color: white !important;
+    background-color: #337ab7;
+}
+
+.welcome-header hr{
+    padding: 0;
+    border: none;
+    border-top: 1px solid #333;
+    color: white;
+    text-align: center;
+    width: 30%;
+}
+.welcome-header hr:after {
+    content: "Anonymist Vape Lounge";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.5em;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* events section */
+.col-sm-6 {
+    margin: 0;
+    padding: 5px;
+}
+.hovereffect3 img{
+    height: 200px;
+    width: 100%;
+    margin: 0;
+}
+
+.events-header hr{
+    padding: 0;
+    border: none;
+    border-top: 1px solid lightgray;
+    color: white;
+    text-align: center;
+    width: 30%;
+}
+.events-header hr:after {
+    content: "Latest Vaping News";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.8em;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+/* end events */
+
+/* blog / student works container */
+
+.col-bordered {
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+/* end blog / student works container */
+
+/* blog section */
+
+.blog-header hr{
+    padding: 0;
+    border: none;
+    border-top: 1px solid lightgray;
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+.blog-header hr:after {
+    content: "Latest Blog Posts";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.8em;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.blog-row {
+    display: table;
+    table-layout: fixed;
+    height: 150px;
+    max-height: 150px;
+    margin-bottom: 10px;
+}
+
+.blog-row > .col-sm-4, .blog-row > .col-sm-8 {
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+    height:100%;
+    max-height:200px;
+}
+
+.blog-row img{
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+.col-lg-12 .col-sm-8 h5{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 4%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    background-color: rgb(146, 83, 22);
+}
+
+.blog-time{
+    float: right;
+    color: white;
+    margin-right: 5px;
+    font-family: sans-serif;
+}
+
+.col-lg-12 .col-sm-8 h6{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 4%;
+    margin-top: 0;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgba(183, 117, 52, 0.8);
+}
+
+.col-lg-12 .col-sm-8 p{
+    font-family: sans-serif;
+    text-align: justify;
+    margin-left: 4%;
+    margin-top: 0;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.col-lg-12 .col-sm-8 h6>a{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.col-lg-12 .col-sm-8 h6>a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+a.info {
+    font-family: "PT Sans Narrow", sans-serif;
+    display:block;
+    float: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: rgba(183, 117, 52, 0.8);
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 7px 14px;
+}
+
+a.info:hover {
+  box-shadow: 0 0 5px black;
+}
+
+/* end blog */
+
+/* student works section */
+
+.student-works-header hr{
+    padding: 0;
+    border: none;
+    border-top: 1px solid lightgray;
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+.student-works-header hr:after {
+    content: "Latest Vaping Builds";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.8em;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.col-lg-12 .col-sm-11 p {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+}
+.caption-text a.info:hover{
+    box-shadow: 0 0 5px #fff;
+}
+
+.cuadro_intro_hover{
+        padding: 0px;
+		position: relative;
+		overflow: hidden;
+		height: 240px;
+	}
+	.cuadro_intro_hover:hover .caption{
+		opacity: 1;
+		transform: translateY(-190px);
+		-webkit-transform:translateY(-190px);
+		-moz-transform:translateY(-190px);
+		-ms-transform:translateY(-190px);
+		-o-transform:translateY(-190px);
+	}
+	.cuadro_intro_hover img{
+		z-index: 4;
+	}
+	.cuadro_intro_hover .caption{
+		position: absolute;
+		top:190px;
+		-webkit-transition:all 0.3s ease-in-out;
+		-moz-transition:all 0.3s ease-in-out;
+		-o-transition:all 0.3s ease-in-out;
+		-ms-transition:all 0.3s ease-in-out;
+		transition:all 0.3s ease-in-out;
+		width: 100%;
+	}
+	.cuadro_intro_hover .blur{
+		background-color: rgba(0,0,0,0.7);
+		height: 300px;
+		z-index: 5;
+		position: absolute;
+		width: 100%;
+	}
+	.cuadro_intro_hover .caption-text{
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		height: 300px;
+		text-align: center;
+		top:-20px;
+		width: 100%;
+	}
+
+/* end student works */
+
+
+.col-lg-12{
+    text-align: center;
+    color: #777777;
+}
+
+.col-lg-12 p{
+    font-family: "PT Sans Narrow", sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+    color:#777777;
+}
+
+.col-lg-12 h5{
+    font-family: sans-serif;
+    color: saddlebrown;
+}
+
+.no-mp{
+    margin: 0;
+    padding: 0;
+}
+
+.row-1 h2{
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.row-1 img{
+    min-width: 100%;
+    height: 180px;
+    position: absolute;
+    top: -20px;
+    box-shadow: 0 1px 1px 1px black;
+}
+
+.row-1 .col-lg-4 {
+    height: 130px;
+}
+
+.row-1 .col-lg-4:hover .box{
+    background-color: #337ab7;
+    color: white;
+}
+
+.box {
+    background-color: gainsboro;
+    height: inherit;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row-1 .col-lg-4 .col-md-7{
+}
+
+.headermessage {
+  margin: 19px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.image-block {
+    box-shadow: 5px 5px 5px grey;
+    background-color: white;
+    padding: 0px;    
+    margin: 0px;
+    height:200px;
+    text-align: center;
+    vertical-align: bottom;
+}
+.image-block > p {
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    font-size: 19px;
+    padding-top: 150px;
+    background-color: rgba(3,3,3,0.0);
+    color: rgba(6,6,6,0.0);
+}
+.image-block:hover > p {
+    background-color: rgba(3,3,3,0.5);    
+    color: white;    
+}
+
+.nopadding{
+    padding: 5px !important;
+    margin: 0 !important;
+}
+
+.fixed-panel {
+  min-height: 1100; !important;
+  max-height: 1100;!important;
+  height: 1100;!important;
+  overflow-y: scroll;
+}
+
+.sidenews img{
+    margin-top: 10px;
+    vertical-align: middle; !important;
+    min-height: 55px;!important;
+    max-height: 55px; !important;
+    min-width: 70px;!important;
+    max-width: 70px; !important;
+    object-fit: cover;
+}
+
+.content {
+    background: white;
+}
+
+#news-header{
+    font-size: 28px;
+    font-weight:800;
+}
+#news-header:hover{
+    color: white;
+}
+
+#news {
+    font-family: sans-serif;
+}
+
+  .main.container {
+    margin-top: 2em;
+  }
+
+  .main.menu {
+    margin-top: 4em;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    transition:
+      box-shadow 0.5s ease,
+      padding 0.5s ease
+    ;
+  }
+  .main.menu .item img.logo {
+    margin-right: 1.5em;
+  }
+
+  .overlay {
+    float: left;
+    margin: 0em 3em 1em 0em;
+  }
+  .overlay .menu {
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+  }
+
+  .main.menu.fixed {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  .overlay.fixed .menu {
+    left: 800px;
+  }
+
+  .text.container .left.floated.image {
+    margin: 2em 2em 2em -4em;
+  }
+  .text.container .right.floated.image {
+    margin: 2em -4em 2em 2em;
+  }
+
+  .ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+  }
+  
+  asd{
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+ 
+	@media only screen and (max-width : 933px){
+	}
+	
+	@media only screen and (max-width : 768px){
+		    .twoRow .navbar-collapse 
+    }
+	
+	}
+	@media only screen and (max-width : 480px){
+		
+
+	}

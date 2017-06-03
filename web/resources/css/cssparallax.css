@@ -1,0 +1,78 @@
+.crt-parallaxvideo{ 
+	height: 300px;
+	padding-bottom: 50px;
+    padding-top: 50px;
+   
+}
+.crt-parallaxvideo video{ 
+    min-width: 100%;
+    position: fixed;
+	top:0;
+	z-index: -100;
+	
+}
+.crt-parallaxvideo h1 {
+    color: #fff;
+    font-size: 76px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.plax.ccparallax-one {
+  background-image: url("images/news1.jpg");
+}
+.plax.ccparallax-two {
+  background-image: url("images/news2.png");
+}
+.plax.ccparallax-three {
+  background-image: url("images/news3.jpg");
+}
+.plax.ccparallax-four {
+  background-image: url("images/plax4.jpg");
+}
+
+
+.plax:last-child {
+  margin-bottom: 0;
+}
+.plax.ccparallax {
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#eventsplax{
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+.plax.content {
+    background: none repeat scroll 0 0 white;
+    min-height: 630px;
+}
+.plax.footer {
+    background: none repeat scroll 0 0 black;
+    min-height: 430px;
+}
+
+.video_contain {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+}
