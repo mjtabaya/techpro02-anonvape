@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iACADEMY: Student Works</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="iACADEMY is a college located in Makati City, Philippines, that’s known for its niche courses in the field of Computing, Business and Design.">
+    <meta name="keywords" content="School, College, Philippines, computer, business, design, game development schools, game development colleges, design schools, design schools philippines, design schools in makati">
+    <meta name="author" content="luminair">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://www.iacademy.edu.ph/site/assets/themes/default/images/fb1024.png">
+    
+    <link rel="icon" type="image/png" href="http://www.iacademy.edu.ph/site/assets/img/favicon-shield.png">
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/navbar.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="resources/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/backtotop.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/index.css" />
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<link rel="stylesheet" href="resources/css/studentworks/normalize.css">
+	<link rel="stylesheet" href="resources/css/studentworks/layout.css">
+    <script type="text/javascript" src="resources/js/jquery.min.js"></script>	
+    <script type="text/javascript" src="resources/js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="resources/js/jquery.mixitup.min.js"></script>
+    <!--<script type="text/javascript" src="http://www.queness.com/js/bsa.js"></script>-->
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+</head>
+<body>
+<header>
+   <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">	<span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a class="navbar-brand" href="index.html">iACADEMY</a>
+            </div>
+            
+
+            <div class="collapse navbar-collapse js-navbar-collapse">
+                
+                <ul class="nav navbar-nav" >
+                    <li><a href="index.html" id="navbar-logo" >
+                        <img style="height:55px; width:55px;border-bottom: 5px groove #262626;" src="resources/css/images/seal-small.png"></a></li>                    
+                    <li class="dropdown mega-dropdown">
+                        <a href="admissions.html" class="dropdown-toggle" data-toggle="dropdown">Admissions</a>
+                        <ul id="dropdown-b" class="dropdown-menu mega-dropdown-menu" role="menu">
+
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header"><a id="dropdown-link" href="admissions.html">Application Procedure</a></li>
+                                    <li><a href="admissions.html"><i class="fa fa-check-square"></i> Step-by-Step Guide</a></li>
+                                    <li><a href="admissions.html"><i class="fa fa-file-text"></i> Application Form</a></li>
+                                    <li><a href="admissions.html"><i class="fa fa-pencil-square"></i> Schedule Exam</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header"><a href="admissions.html">Guidelines</a></li>
+                                    <li><a href="admissions.html">For Senior High School</a></li>
+                                    <li><a href="admissions.html">For Freshmen</a></li>
+                                    <li><a href="admissions.html">For Transferees</a></li>
+                                    <li><a href="admissions.html">For Next School</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header"><a href="" data-toggle="modal" data-target="#modal_calendar">Calendar</a></li>
+                                    <li><a href="" data-toggle="modal" data-target="#modal_calendar"><i class="fa fa-calendar-times-o"></i> Examination Schedules</a></li>
+                                    <li><a href="" data-toggle="modal" data-target="#modal_calendar"><i class="fa fa-calendar"></i> Enrollment Schedule</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header"><a href="scholarship.html">Scholarship Grants</a></li>
+                                    <li><a href="scholarship.html"><i class="fa fa-square-o"></i> Scholarship Openings</a></li>
+                                    <li><a href="scholarship.html"><i class="fa fa-certificate"></i> Financial Assistant Programs</a></li>
+                                    <li><a href="scholarship.html"><i class="fa fa-gift"></i> Promotional Discounts</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics</a>
+                        <ul id="dropdown-b" class="dropdown-menu mega-dropdown-menu" role="menu">
+
+                            <li class="col-sm-4">
+                                <ul>
+                                    <li class="dropdown-header">Senior High School (K12)</li>
+                                    <li><a href="#"><i class="fa fa-mortar-board"></i> Academic Tracks</a></li>
+                                    <li><a href="#"><i class="fa fa-gears"></i> Technical Vocational</a></li>
+                                    <li><a href="#"><i class="fa fa-cubes"></i> Arts and Design</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+
+                            <li class="col-sm-4">
+                                <ul>
+                                    <li class="dropdown-header">Undergraduate</li>
+                                    <li><a href="#"><i class="fa fa-desktop"></i> School of Computing</a></li>
+                                    <li><a href="#"><i class="fa fa-line-chart"></i> School of Business</a></li>
+                                    <li><a href="#"><i class="fa fa-paint-brush"></i> School of Design</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+
+                            <li class="col-sm-4">
+                                <ul>
+                                    <li class="dropdown-header">Short Course (Next School)</li>
+                                    <li><a href="#"><i class="fa fa-info-circle"></i> Courses Offered</a></li>
+                                    <li><a href="#"><i class="fa fa-calendar-check-o"></i> Course Schedules</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community</a>
+                        <ul id="dropdown-b" class="dropdown-menu mega-dropdown-menu" role="menu">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header"><a href="news.html"><i class="fa fa-newspaper-o"></i> News</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header"><a href="events.html"><i class="fa fa-calendar-check-o"></i>Events</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header"><a href="blog.html"><i class="fa fa-newspaper-o"></i> Blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header"><a href="studentworks.html"><i class="fa fa-object-group"></i> Student Works </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Industry Partners</a>
+                        <ul id="dropdown-b" class="dropdown-menu mega-dropdown-menu" role="menu">
+                            <li class="col-sm-3">
+                                <p> iACADEMY works hand-in-hand with the world's current leading corporations in industries most relevant today.
+                                </p>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">
+                                        <a href="http://www.microsoft.com" target="_blank">
+                                            <div class="icon">
+                                            <img src="resources/css/images/mslogo.svg.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">
+                                        <a href="http://www.wacom.com" target="_blank">
+                                            <div class="icon">
+                                            <img src="resources/css/images/wacomlogo.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">
+                                        <a href="http://www.ibm.com" target="_blank">
+                                            <div class="icon">
+                                            <img src="resources/css/images/ibmlogo.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+                        <ul id="dropdown-a" class="dropdown-menu mega-dropdown-menu" role="menu">
+
+                            <li class="col-sm-3">
+                                    <ul class="col-sm-6"><a href="">
+                                        <li class="dropdown-header"><img class="img-responsive" src="resources/css/images/seal-small.png"></li></a>
+                                    </ul>
+                                    <ul class="col-sm-6">
+                                        <li><p>iACADEMY PLAZA<br> 324 Senator Gil J. Puyat Ave. Bel-air, Makati City Philippines 1209</p></li>
+                                    </ul>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header"><a id="dropdown-link" href="history.html">School Foundation</a></li>
+                                    <li><a href="history.html"><i class="fa fa-history"></i> History</a></li>
+                                    <li><a href="timeline.html"><i class="fa fa-map-signs"></i> Timeline</a></li>
+                                    <li><a href="history.html#mission-vision"><i class="fa fa-balance-scale"></i> Mission Vision</a></li>
+                                    <li><a href="history.html#the-administration"><i class="fa fa-group"></i> The Administration</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header"><a id="dropdown-link" href="campus%20life.html">Campus Life</a></li>
+                                    <li><a href="campus%20life.html"><i class="fa fa-building-o"></i> Facilities</a></li>
+                                    <li><a href="campus%20life.html"><i class="fa fa-bus"></i> Campus Tour</a></li>
+                                    <li><a href="campus%20life.html"><i class="fa fa-group"></i> Student Organizations</a></li>
+                                    <li><a href="campus%20life.html"><i class="fa fa-location-arrow"></i> Find iACADEMY</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Official Documents</li>
+                                    <li><a href="http://www.iacademy.edu.ph/site/home/download_pdf/handbook.pdf" target="_blank"><i class="fa fa-book"></i> Student Handbook</a></li>
+                                    <li><a href="" data-toggle="modal" data-target="#modal_chedCertifications"><i class="fa fa-file-text-o"></i> CHED Certifications</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="dropdown-contact" class="dropdown">
+                        <a href="contactus.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
+                        <ul id="contact-content" class="dropdown-menu">
+                            <li><p class="text-center">Telephone:<br>(02) 889-7777</p></li>
+                            <li><a href="contactus.html" title="Contact Us!"><i class="fa fa-envelope"></i> Send a Message</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                    <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" size="13" placeholder="Search" name="srch-term" id="srch-term">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                    </form>
+                    </li>
+                </ul>
+                <!-- end of navbar-->
+            </div>
+            <!-- Bread Crumbs-->
+            <ul class="breadcrumbb list-inline">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Community</li>
+                    <li class="active">Student Works</li>
+                <a class="pull-right quick" href="" data-toggle="modal" data-target="#modal_calendar">Calendar</a>
+                    <a class="pull-right quick" href="news.html">News</a>
+            </ul>
+            <!-- end Breadcrumbs -->
+        </div>
+    </div>
+</nav>
+</header>
+    
+    <!-- content -->
+    <div id="darkness"></div>
+    <br>
+    <br>
+	<div class="container">
+
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+			<li><span class="filter" data-filter="app">App</span></li>
+			<li><span class="filter" data-filter="card">Card</span></li>
+			<li><span class="filter" data-filter="icon">Icon</span></li>
+			<li><span class="filter" data-filter="logo">Logo</span></li>
+			<li><span class="filter" data-filter="web">Web</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<img src="img/portfolios/logo/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bird Document</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/app/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Visual Infography</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sonor's Design</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Typography Company</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+						
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/app/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Weatherette</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">BMF</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Techlion</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">KittyPic</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																							
+			
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/app/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Graph Plotting</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>														
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">QR Quick Response</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/6.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Mobi Sock</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/7.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Village Community Church</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>													
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Domino's Pizza</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>							
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Backend Admin</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Instagram</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Student Guide</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/icon/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scoccer</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																																
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/icon/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">3D Map</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Note</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>									
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Native Designers</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bookworm</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																												
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sandwich</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Reality</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/logo/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Speciallisterne</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+										
+			
+		</div>
+		
+	</div><!-- container -->
+    
+    <!-- Footer -->
+    <footer>
+        <div class="col-lg-12 text-center">
+            <hr>
+            <h4>Industry Partners</h4>
+            <div class="col-md-4">
+                <a href="http://www.microsoft.com" target="_blank">
+                    <img class="img-responsive img-logo center-block" src="resources/css/images/mslogo.svg.png">
+                </a>
+            </div>
+            <div class="col-md-4">
+                        <a href="http://www.wacom.com" target="_blank">
+                            <img class="img-responsive img-logo center-block" src="resources/css/images/wacomlogo.png">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="http://www.ibm.com" target="_blank">
+                    <img class="img-responsive img-logo center-block" src="resources/css/images/ibmlogo.png">
+                </a>
+            </div>
+        </div>
+        <!-- end of industry partners -->
+        <div class="row">
+            <div class="col-lg-12">
+                
+            <br>
+            <hr>
+            <div class="col-lg-7">
+                <div class="col-md-4">
+                <h4>About Us</h4>
+                    <p style="text-align:left;">
+                        Information and Communications Technology Academy, better known as iAcademy is a private, non-sectarian educational institution in the Philippines.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                <h4>iACADEMY PLAZA</h4>
+                    <p>
+                        324 Senator Gil J. Puyat Ave.<br>
+                        Bel-air, Makati City<br>
+                        Philippines 1209
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact:</h4>
+                    <p class="text-center">Telephone: (02) 889-7777<br><br>
+                        <a href="contactus.html" title="Tell Us Your Thoughts!"><i class="fa fa-envelope"></i> Send a Message</a>
+                    </p>
+                    <h4>Social:</h4>
+                    
+                    <a href="" id="gh" target="_blank" title="Facebook"><span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                    </a>
+                    <a href="" id="gh" target="_blank" title="Twitter"><span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span>
+                    </a>
+                    <a href="" id="gh" target="_blank" title="Instagram"><span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x"></i>
+                    </span>
+                    </a>
+                    <a href="" id="gh" target="_blank" title="Dribble"><span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-dribbble fa-stack-1x"></i>
+                    </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="container" style="width:100%;">
+                    <div class="form-group">
+                        <label class="pull-left" for = "name">Your Email:</label>
+                        <input class="form-control" id="inputdefault" type="text">
+                    </div>
+                      
+                    <form role = "form">
+                        <div class = "form-group">
+                            <label class="pull-left" for = "name">Send Us a Message:</label>
+                            <textarea class = "form-control" rows = "3"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#modal_sent">Send</button>
+                </div>
+                <br>
+            </div>
+                
+                <div class="col-lg-12 no-mp">
+                    <div class="footer-links">
+                        <a href="admissions.html">Admissions</a>
+                        <a href="academics.html">Academics</a>
+                        <a href="news.html.html">News</a>
+                        <a href="events.html">Events</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="studentworks.html">Student Works</a>
+                        <a href="history.html">School Foundation</a>
+                        <a href="campus%20life.html">Campus Life</a>
+                    </div>
+                </div>
+                
+            
+            <!--- Space below 2 images at left -->
+                
+                    
+                    <!-- end of space -->
+                    
+                    <!-- iacademy seal logo -->
+                    <div class="col-lg-12">
+                    <div style="width:150px;margin:0 auto;position: relative;margin-bottom: -13rem;">
+                        <a href="#">
+                            <img class="img-responsive" src="resources/css/images/seal-small.png" />
+                        </a>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12" style="margin-top:60px; text-align:left;">
+                            <hr>
+                            <p>&nbsp;Copyright © GabManRem 2016 | <a href="">Privacy Policy</a> | <a href="">Terms of Use</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- /.container -->
+    <!-- Modal -->
+  <div class="modal fade" id="modal_studentHandbook" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Student Handbook</h4>
+              </div>
+              <div class="modal-body">
+                  <pre>(Be a man)
+We must be swift as the coursing river,
+(Be a man)
+With all the force of a great typhoon,
+(Be a man)
+With all the strength of a raging fire,
+Mysterious as the dark side of the moon.</pre>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+        <!-- end Modal-->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modal_chedCertifications" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">CHED Certifications</h4>
+                </div>
+                <div class="modal-body">
+                    <pre>Insert CHED Certifications here.</pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Modal-->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modal_sent" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Send Us A Message</h4>
+                </div>
+                <div class="modal-body">
+                    <pre>Message successfully sent.</pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Modal-->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modal_calendar" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Calendar</h4>
+                </div>
+                <div class="modal-body" style="font-family:sans-serif;">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Examination Schedules</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="info">
+                            <td>9, April 2016 (8:00 AM - 9:00PM)</td>
+                            <td>Friday</td>
+                          </tr>
+                          <tr class="info">
+                            <td>11, April 2016 (8:00 AM - 9:00PM)</td>
+                            <td>Monday</td>
+                          </tr>
+                        <tr class="info">
+                            <td>16, April 2016 (8:00 AM - 9:00PM)</td>
+                            <td>Saturday</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Enrollment Schedules</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="info">
+                            <td>12, April 2016 (8:00 AM - 5:00PM)</td>
+                            <td>Tuesday</td>
+                              <td>Batch 15 / Batch 2010 and Prior</td>
+                          </tr>
+                          <tr class="info">
+                            <td>13-15, April 2016 (8:00 AM - 5:00PM)</td>
+                            <td>Wednesday-Friday</td>
+                              <td>Batch 11-14</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="back-to-top" style="display: none;">Back to Top </a>
+    <!-- end Modal-->
+    </body>
+    <script SRC="resources/js/navbar.js"></script>
+    <script src="resources/js/bootstrap.js"></script>
+</html>
